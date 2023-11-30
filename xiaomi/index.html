@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <!--    <script src="js/index.js"></script>-->
+</head>
+<body>
+<div class="topBar">
+    <div class="container">
+        <div class="topBar_list">
+            <a href="#">小米商城</a>
+            <span>|</span>
+            <a href="#">MIUI</a>
+            <span>|</span>
+            <a href="#">loT</a>
+            <span>|</span>
+            <a href="#">云服务</a>
+            <span>|</span>
+            <a href="#">金融</a>
+            <span>|</span>
+            <a href="#">小米有品</a>
+            <span>|</span>
+            <a href="#">小爱开放频台</a>
+            <span>|</span>
+            <a href="#">政企服务</a>
+            <span>|</span>
+            <a href="#">资质证照</a>
+            <span>|</span>
+        </div>
+        <div class="shop">
+            <a href="#">
+                <i class="iconfont" style="font-size: 18px">&#xe61b</i>
+                购物车（0）</a>
+        </div>
+        <div class="login">
+            <a href="#">登录</a>
+            <span>|</span>
+            <a href="#">注册</a>
+            <span>|</span>
+            <a href="#">消息通知（0）</a>
+            <span>|</span>
+        </div>
+    </div>
+</div>
+<!--顶部栏-->
+<div class="header">
+    <div class="container">
+        <div class="site-logo">
+            <a href="#"><img src="image/logo.png"></a>
+        </div>
+        <div class="site-list">
+            <ul>
+                <li class="site-category">
+                    <a href="#">
+                        <img src="">
+                    </a>
+                    <div class="category-list">
+                        <ul>
+                            <li>
+                                <a href="#">手机
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">电视
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">家电
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">笔记本 平板
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">出行 穿戴
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">耳机 音箱
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">健康 儿童
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">生活 箱包
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">智能 路由器
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">电源 配件
+                                    <span class="iconfont">&#xe605;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Xiaomi手机</a>
+                </li>
+                <li>
+                    <a href="#">Redmi手机</a>
+                </li>
+                <li>
+                    <a href="#">电视</a>
+                </li>
+                <li>
+                    <a href="#">笔记本</a>
+                </li>
+                <li>
+                    <a href="#">平板</a>
+                </li>
+                <li>
+                    <a href="#">家电</a>
+                </li>
+                <li>
+                    <a href="#">路由器</a>
+                </li>
+                <li>
+                    <a href="#">服务中心</a>
+                </li>
+                <li>
+                    <a href="#">社区</a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-search">
+            <form action="">
+                <input type="text" name="shop" class="search-text">
+                <input type="submit" class="search_btn iconfont" value="&#xe60b;" style="font-size: 16px">
+                <div class="search-word">
+                    <a href="#">小米14</a>
+                    <a href="#">小米14 Pro</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--导航栏-->
+<div class="site-content">
+    <div class="container">
+        <!--轮播图-->
+        <div class="site-slider">
+            <div class="carousel">
+                <div class="container-round">
+                    <img src="image/round/1.jpg">
+                    <img src="image/round/2.jpg">
+                    <img src="image/round/3.jpg">
+                    <img src="image/round/4.jpg">
+                </div>
+                <script>
+                    // let index = 0;
+                    // let timerId;
+                    //
+                    // function refresh() {
+                    //     if (index < 0) {
+                    //         index = 3;
+                    //     } else if (index > 3) {
+                    //         index = 0;
+                    //     }
+                    //
+                    //     let carousel = document.querySelector(".carousel");
+                    //     let width = getComputedStyle(carousel).width;
+                    //     width = Number(width.slice(0, -2));
+                    //
+                    //     carousel.querySelector(".container-round").style.left =
+                    //         index * width * -1 + "px";
+                    // }
+                    //
+                    // function leftshift() {
+                    //     clearInterval(timerId);
+                    //     index--;
+                    //     refresh();
+                    //     timerId = setInterval(() => {
+                    //         index++;
+                    //         refresh();
+                    //     }, 3000);
+                    // }
+                    //
+                    // function rightshift() {
+                    //     clearInterval(timerId);
+                    //     index++;
+                    //     refresh();
+                    //     timerId = setInterval(() => {
+                    //         index++;
+                    //         refresh();
+                    //     }, 3000);
+                    // }
+                    //
+                    // function setindex(idx) {
+                    //     clearInterval(timerId);
+                    //     index = idx;
+                    //     refresh();
+                    // }
+                    //
+                    // timerId = setInterval(() => {
+                    //     index++;
+                    //     refresh();
+                    // }, 3000);
+                    //
+                    // refresh();
+                </script>
+            </div>
+            <span class="next" onclick="rightshift()"></span>
+            <span class="prev" onclick="leftshift()"></span>
+            <div class="slider-item">
+                <a href="#"  onclick="setindex(0)"></a>
+                <a href="#"  onclick="setindex(1)"></a>
+                <a href="#"  onclick="setindex(2)"></a>
+                <a href="#"  onclick="setindex(3)"></a>
+            </div>
+            <script>
+                let index = 0;
+                let timerId;
+
+                function refresh() {
+                    if (index < 0) {
+                        index = 3;
+                    } else if (index > 3) {
+                        index = 0;
+                    }
+
+                    let carousel = document.querySelector(".carousel");
+                    let width = getComputedStyle(carousel).width;
+                    width = Number(width.slice(0, -2));
+
+                    carousel.querySelector(".container-round").style.left =
+                        index * width * -1 + "px";
+                }
+
+                function leftshift() {
+                    clearInterval(timerId);
+                    index--;
+                    refresh();
+                    timerId = setInterval(() => {
+                        index++;
+                        refresh();
+                    }, 3000);
+                }
+
+                function rightshift() {
+                    clearInterval(timerId);
+                    index++;
+                    refresh();
+                    timerId = setInterval(() => {
+                        index++;
+                        refresh();
+                    }, 3000);
+                }
+
+                function setindex(idx) {
+                    clearInterval(timerId);
+                    index = idx;
+                    refresh();
+                    timerId = setInterval(() => {
+                        index++;
+                        refresh();
+                    }, 3000);
+                }
+
+                timerId = setInterval(() => {
+                    index++;
+                    refresh();
+                }, 3000);
+
+                refresh();
+            </script>
+        </div>
+    </div>
+    <div class="content-sub">
+        <!-- 向导左 -->
+        <div class="content-channel">
+            <ul class="channel-list clearfix">
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe641;</i>
+                        选购手机
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe790;</i>
+                        企业团购
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe603;</i>
+                        F码通道
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe602;</i>
+                        米粉卡
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe60f;</i>
+                        以旧换新
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe601;</i>
+                        话费充值
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 向导右 -->
+        <div class="content-list">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="image/xiaomi%20tv.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/xiaomi%20buds%204%20pro.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/xiaomi%2014%20pro.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content-banner">
+            <div class="container-banner">
+                <a href="#">
+                    <a href="#">
+                        <img id="bannerid" src="image/banner.jpg">
+                    </a>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容详情-->
+<div class="content-desc">
+    <div class="container-desc">
+<!--标题-->
+        <div class="box-hd">
+            <h2>手机</h2>
+            <div class="more">
+                <a href="#">
+                    查看全部
+                    <i class="iconfont">&#xe605</i>
+                </a>
+            </div>
+        </div>
+<!--        内容-->
+        <div class="box-bd">
+            <div class="row clearfix">
+<!--                内容左边-->
+                <div class="row-1">
+                    <a href="#">
+                        <img src="image/content/xiaomi14.jpg">
+                    </a>
+                </div>
+<!--                内容右边-->
+                <div class="row-r">
+                    <ul>
+                        <li>
+<!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/xiaomi14pro.jpg">
+                                </a>
+                            </div>
+<!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Xiaomi 14 Pro
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                徕卡Summilux可变光圈镜头...
+                            </p>
+                            <p class="price">
+                                <span class="num">4999</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/xiaomi14%201.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#" id="text-title">
+                                    Xiaomi 14
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                新一代骁龙8gen3处理器
+                            </p>
+                            <p class="price">
+                                <span class="num">3999</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/redminote13pro.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Redmi Note 13 Pro
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                第二代 1.5K 高光护眼屏
+                            </p>
+                            <p class="price">
+                                <span class="num">1899</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/redmi%20note13%20pro+.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Redmi Note 13 Pro+
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                新 2 亿像素｜金刚曲屏
+                            </p>
+                            <p class="price">
+                                <span class="num">2099</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/redminote135g.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Redmi Note 13 5G
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                1亿像素 更快更清晰
+                            </p>
+                            <p class="price">
+                                <span class="num">1099</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/mimax.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Xiaomi MIX Fold 3
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                轻薄折叠屏
+                            </p>
+                            <p class="price">
+                                <span class="num">8999</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/redmik60ultra.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Redmi K60 至尊版
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                超越旗舰的体验
+                            </p>
+                            <p class="price">
+                                <span class="num">2799</span>元起
+                            </p>
+                        </li>
+                        <li>
+                            <!--                            图像-->
+                            <div class="figure">
+                                <a href="#">
+                                    <img src="image/content/redmi12.jpg">
+                                </a>
+                            </div>
+                            <!--                            标题-->
+                            <h3 class="title">
+                                <a href="#">
+                                    Redmi 12 5G
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                5G 骁龙芯，大屏大电量
+                            </p>
+                            <p class="price">
+                                <span class="num">899</span>元起
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--内容详情-->
+<div class="footer">
+    <div class="container"></div>
+</div>
+<!--脚部-->
+</body>
+</html>
